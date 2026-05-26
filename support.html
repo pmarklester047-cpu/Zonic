@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zonic IT Solutions — Request IT Support</title>
+    <meta name="description" content="Request IT support from Zonic IT Solutions using our quick form." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <script defer src="./script.js"></script>
+  </head>
+
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header" data-header>
+      <nav class="nav shell" aria-label="Primary">
+        <a class="brand" href="./index.html" aria-label="Zonic IT Solutions Home">
+          <span class="brand-mark" aria-hidden="true"></span>
+          <span class="brand-text">
+            <span class="brand-name">ZONIC</span>
+            <span class="brand-sub">IT SOLUTIONS</span>
+          </span>
+        </a>
+
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links" data-nav-toggle>
+          <span class="sr-only">Open menu</span>
+          <span class="nav-toggle-lines" aria-hidden="true"></span>
+        </button>
+
+        <div class="nav-links" id="nav-links" data-nav-links>
+          <a class="nav-link" href="./index.html">Home</a>
+          <a class="nav-link" href="./services.html">Services</a>
+          <a class="nav-link is-active" href="./support.html">Support</a>
+          <a class="nav-link" href="./contact.html">Contact</a>
+          <a class="btn btn-primary btn-small" href="./support.html">Request Support</a>
+        </div>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="page-hero page-hero--compact">
+        <div class="page-hero-bg" aria-hidden="true">
+          <div class="hero-glow hero-glow--a"></div>
+          <div class="hero-glow hero-glow--b"></div>
+        </div>
+        <div class="shell page-hero-inner">
+          <div>
+            <p class="eyebrow">Support request</p>
+            <h1>Request IT Support</h1>
+            <p class="muted">Fill out the form and our support team will get back to you shortly.</p>
+          </div>
+          <div class="page-hero-actions">
+            <a class="btn btn-ghost" href="./contact.html">Need urgent help?</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--white">
+        <div class="shell form-layout">
+          <div class="form-card">
+            <form class="form" data-support-form>
+              <div class="form-row">
+                <div class="field">
+                  <label for="fullName">Full name</label>
+                  <input id="fullName" name="fullName" type="text" placeholder="Enter your name" autocomplete="name" />
+                </div>
+                <div class="field">
+                  <label for="email">Email</label>
+                  <input id="email" name="email" type="email" placeholder="Enter your email" autocomplete="email" />
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="field">
+                  <label for="department">Department</label>
+                  <input id="department" name="department" type="text" placeholder="Enter your department" />
+                </div>
+                <div class="field">
+                  <label for="issueType">Issue type</label>
+                  <select id="issueType" name="issueType">
+                    <option value="general">General support</option>
+                    <option value="hardware">Hardware</option>
+                    <option value="software">Software</option>
+                    <option value="network">Network / Wi‑Fi</option>
+                    <option value="account">Account / Access</option>
+                    <option value="security">Security incident</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="field">
+                <label for="priority">Priority</label>
+                <div class="segmented" role="group" aria-label="Priority selection">
+                  <label class="seg">
+                    <input type="radio" name="priority" value="low" checked />
+                    <span>Low</span>
+                  </label>
+                  <label class="seg">
+                    <input type="radio" name="priority" value="normal" />
+                    <span>Normal</span>
+                  </label>
+                  <label class="seg">
+                    <input type="radio" name="priority" value="urgent" />
+                    <span>Urgent</span>
+                  </label>
+                </div>
+                <p class="hint">For emergencies or outages, choose <strong>Urgent</strong>.</p>
+              </div>
+
+              <div class="field">
+                <label for="description">Description</label>
+                <textarea
+                  id="description"
+                  name="description"
+                  rows="6"
+                  placeholder="Describe your issue…"
+                ></textarea>
+              </div>
+
+              <div class="form-row">
+                <div class="field">
+                  <label for="device">Device (optional)</label>
+                  <input id="device" name="device" type="text" placeholder="e.g., Dell Latitude / MacBook Pro" />
+                </div>
+                <div class="field">
+                  <label for="bestTime">Best time to reach you</label>
+                  <input id="bestTime" name="bestTime" type="text" placeholder="e.g., Today 2–5pm" />
+                </div>
+              </div>
+
+              <div class="form-actions">
+                <button class="btn btn-primary" type="submit">Submit Request</button>
+                <button class="btn btn-secondary" type="reset">Clear</button>
+              </div>
+
+              <div class="form-message" role="status" aria-live="polite" data-form-message></div>
+            </form>
+          </div>
+
+          <aside class="side-card">
+            <div class="side-card-top">
+              <div class="side-title">What happens next?</div>
+              <p class="muted">
+                You’ll receive a confirmation email. We’ll triage and respond with next steps—typically within minutes.
+              </p>
+            </div>
+
+            <div class="side-steps">
+              <div class="step">
+                <span class="step-num">1</span>
+                <div>
+                  <div class="step-title">Confirm</div>
+                  <div class="muted">Instant confirmation + ticket number.</div>
+                </div>
+              </div>
+              <div class="step">
+                <span class="step-num">2</span>
+                <div>
+                  <div class="step-title">Triage</div>
+                  <div class="muted">Assigned to the right specialist.</div>
+                </div>
+              </div>
+              <div class="step">
+                <span class="step-num">3</span>
+                <div>
+                  <div class="step-title">Resolve</div>
+                  <div class="muted">Fix, verify, and share prevention tips.</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="side-contact">
+              <div class="side-pill">
+                <span class="dot dot-good" aria-hidden="true"></span>
+                Available today: 24/7 critical coverage
+              </div>
+              <div class="side-pill">
+                <span class="dot dot-warn" aria-hidden="true"></span>
+                Email: ZonicITSolution@gmail.com
+              </div>
+              <div class="side-pill">
+                <span class="dot dot-warn" aria-hidden="true"></span>
+                Phone: 09987654321
+              </div>
+            </div>
+          </aside>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="shell footer-grid">
+        <div>
+          <div class="footer-brand">
+            <span class="brand-mark" aria-hidden="true"></span>
+            <div>
+              <div class="footer-name">Zonic IT Solutions</div>
+              <div class="footer-sub">Reliable • Fast • Secure</div>
+            </div>
+          </div>
+          <p class="footer-note">
+            IT support, monitoring, and cybersecurity services for small businesses and modern teams.
+          </p>
+        </div>
+        <div class="footer-links">
+          <a href="./index.html">Home</a>
+          <a href="./services.html">Services</a>
+          <a href="./contact.html">Contact</a>
+        </div>
+        <div class="footer-meta">
+          <div class="footer-pill">ZonicITSolution@gmail.com</div>
+          <div class="footer-pill">09987654321</div>
+        </div>
+      </div>
+      <div class="shell footer-bottom">
+        <span>© <span data-year></span> Zonic IT Solutions</span>
+        <span class="muted"> • </span>
+      </div>
+    </footer>
+  </body>
+</html>
+
